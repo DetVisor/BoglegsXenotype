@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef>
+    <defName>DV_Silvertongued</defName>
+    <label>silvertongued</label>
+    <iconPath>UI/Genes/Gene_Silvertongued</iconPath>
+    <description>Carriers of this gene have difficulty seeing at a distance. Their shooting accuracy at long ranges is reduced.</description>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <statOffsets>
+      <NegotiationAbility>0.18</NegotiationAbility>
+    </statOffsets>
+    <biostatMet>-1</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>sly</symbol></li>
+        <li><symbol>silver</symbol></li>
+        <li><symbol>quick</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>tongued</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DV_MuckSpit</defName>
+    <label>muck spit</label>
+    <description>Carriers grow glands in the neck that generate and store a sticky acid substance, along with acid-tolerant tissues in the mouth. They can spew this acid over an area, where it will stick to enemies and burn them over time.</description>
+    <iconPath>UI/Genes/Gene_StickyMuck</iconPath>
+    <displayCategory>Ability</displayCategory>
+    <marketValueFactor>1.5</marketValueFactor>
+    <abilities>
+      <li>DV_MuckSpit</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>DV_MuckSpit</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-1</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>acid</symbol></li>
+        <li><symbol>acer</symbol></li>
+        <li><symbol>acri</symbol></li>
+        <li><symbol>oxo</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>sprayer</symbol></li>
+        <li><symbol>spitter</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DV_Jaw_FatSac</defName>
+    <label>fatsac</label>
+    <description>Carriers of this gene have pig-like snouts.</description>
+    <iconPath>UI/Genes/Gene_FatSac</iconPath>
+    <graphicData>
+      <graphicPath>Things/Pawn/Humanlike/HeadAttachments/Fatsac/Fatsac</graphicPath>
+      <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+      <useSkinShader>true</useSkinShader>
+      <colorType>Skin</colorType>
+      <visibleNorth>false</visibleNorth>
+      <layer>PostSkin</layer>
+    </graphicData>
+    <biostatCpx>0</biostatCpx>
+    <endogeneCategory>Jaw</endogeneCategory>
+    <displayCategory>Cosmetic</displayCategory>
+    <randomChosen>true</randomChosen>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <displayOrderInCategory>410</displayOrderInCategory>
+    <exclusionTags/>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>pig</symbol></li>
+        <li><symbol>pork</symbol></li>
+        <li><symbol>snout</symbol></li>
+        <li><symbol>boar</symbol></li>
+        <li><symbol>hog</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>pig</symbol></li>
+        <li><symbol>snout</symbol></li>
+        <li><symbol>swine</symbol></li>
+        <li><symbol>boar</symbol></li>
+        <li><symbol>hog</symbol></li>
+        <li><symbol>nose</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DV_Materialistic</defName>
+    <label>materialistic</label>
+    <labelShortAdj>greedy</labelShortAdj>
+    <description>Carriers of this gene are high in trait agreeableness and are very conscientious. They rarely insult others and will sometimes offer kind words to brighten the moods of those around them. They also never judge people by their appearance.</description>
+    <iconPath>UI/Genes/Gene_Materialistic</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>60</displayOrderInCategory>
+    <forcedTraits>
+      <li>
+        <def>Greedy</def>
+      </li>
+    </forcedTraits>
+    <biostatMet>1</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>greedy</symbol>
+          <weight>3</weight>
+        </li>
+        <li><symbol>gluttonous</symbol></li>
+        <li><symbol>avaricious</symbol></li>
+        <li><symbol>hoarding</symbol></li>
+        <li><symbol>avid</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneNoseBase">
+    <defName>DV_Nose_Whiskers</defName>
+    <label>whiskers</label>
+    <description>Carriers of this gene have pig-like snouts.</description>
+    <iconPath>UI/Genes/Gene_Whiskers</iconPath>
+    <graphicData>
+      <graphicPaths>
+        <li>Things/Pawn/Humanlike/HeadAttachments/Whiskers/Whiskers</li>
+        <li>Things/Pawn/Humanlike/HeadAttachments/Whiskers/Whiskers2</li>
+        <li>Things/Pawn/Humanlike/HeadAttachments/Whiskers/Whiskers3</li>
+       </graphicPaths>
+      <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+      <useSkinShader>true</useSkinShader>
+      <layer>PostHeadgear</layer>
+    </graphicData>
+    <missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>410</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>pig</symbol></li>
+        <li><symbol>pork</symbol></li>
+        <li><symbol>snout</symbol></li>
+        <li><symbol>boar</symbol></li>
+        <li><symbol>hog</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>pig</symbol></li>
+        <li><symbol>snout</symbol></li>
+        <li><symbol>swine</symbol></li>
+        <li><symbol>boar</symbol></li>
+        <li><symbol>hog</symbol></li>
+        <li><symbol>nose</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>Skin_GreenMuddy</defName>
+    <label>muddy green skin</label>
+    <labelShortAdj>green</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that gives their skin a dusty red color.</description>
+    <randomBrightnessFactor>0.2</randomBrightnessFactor>
+    <skinColorOverride>(63, 72, 49)</skinColorOverride>
+    <displayOrderInCategory>65</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>dark</symbol></li>
+        <li><symbol>red</symbol></li>
+        <li><symbol>dusty</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>Skin_YellowMuddy</defName>
+    <label>muddy yellow skin</label>
+    <labelShortAdj>yellow</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that gives their skin a dusty blue color.</description>
+    <randomBrightnessFactor>0.2</randomBrightnessFactor>
+    <skinColorOverride>(78, 74, 53)</skinColorOverride>
+    <displayOrderInCategory>65</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>dark</symbol></li>
+        <li><symbol>blue</symbol></li>
+        <li><symbol>dusty</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>Skin_BrownMuddy</defName>
+    <label>muddy brown skin</label>
+    <labelShortAdj>brown</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that gives their skin a dusty purple color.</description>
+    <randomBrightnessFactor>0.2</randomBrightnessFactor>
+    <skinColorOverride>(74, 63, 54)</skinColorOverride>
+    <displayOrderInCategory>65</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>dark</symbol></li>
+        <li><symbol>purple</symbol></li>
+        <li><symbol>dusty</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+</Defs>
