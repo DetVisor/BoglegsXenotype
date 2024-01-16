@@ -21,15 +21,18 @@
     <li>DV_MuckSpit</li>
 	  <li>Body_Fat</li>
 	  <li>PsychicAbility_Dull</li>
+    <li>MeleeDamage_Strong</li>
+    <li MayRequire="Ludeon.RimWorld.Ideology">DV_IntimidatingPresence</li>
     <li>Immunity_Strong</li>
     <li>Beauty_Ugly</li>
     <li>FacialRidges</li>
     <li>AptitudePoor_Shooting</li>
-    <li>AptitudeStrong_Plants</li>
     <li>AptitudeRemarkable_Social</li>
 	  <li>Skin_GreenMuddy</li>
     <li>Skin_BrownMuddy</li>
 	  <li>Skin_YellowMuddy</li>
+    <li>Skin_CyanMuddy</li>
+	  <li>Skin_OliveMuddy</li>
     </genes>
   </XenotypeDef>
 

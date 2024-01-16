@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <GeneDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>DV_IntimidatingPresence</defName>
+    <label>intimidating presence</label>
+    <iconPath>UI/Genes/Gene_IntimidatingPresence</iconPath>
+    <description>Carriers of this gene have a naturally persuasive and eloquent way in which they speak, making them better at convincing people and bartering.</description>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <statOffsets>
+      <SuppressionPower>1.25</SuppressionPower>
+    </statOffsets>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>intimidat</symbol></li>
+        <li><symbol>terrify</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>ing</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
   <GeneDef>
     <defName>DV_Silvertongued</defName>
     <label>silvertongued</label>
     <iconPath>UI/Genes/Gene_Silvertongued</iconPath>
-    <description>Carriers of this gene have difficulty seeing at a distance. Their shooting accuracy at long ranges is reduced.</description>
+    <description>Carriers of this gene have a naturally persuasive and eloquent way in which they speak, making them better at convincing people and bartering.</description>
     <displayCategory>Miscellaneous</displayCategory>
     <displayOrderInCategory>50</displayOrderInCategory>
     <statOffsets>
@@ -54,8 +75,8 @@
 
   <GeneDef>
     <defName>DV_Jaw_FatSac</defName>
-    <label>fatsac</label>
-    <description>Carriers of this gene have pig-like snouts.</description>
+    <label>flabsack</label>
+    <description>Carriers of this gene develop a large sack of extra fat between their throat jaw and collarbones.</description>
     <iconPath>UI/Genes/Gene_FatSac</iconPath>
     <graphicData>
       <graphicPath>Things/Pawn/Humanlike/HeadAttachments/Fatsac/Fatsac</graphicPath>
@@ -121,18 +142,21 @@
 
   <GeneDef ParentName="GeneNoseBase">
     <defName>DV_Nose_Whiskers</defName>
-    <label>whiskers</label>
-    <description>Carriers of this gene have pig-like snouts.</description>
+    <label>barbels</label>
+    <description>Carriers of this gene grow fleshy barbel-like appendages on their upper lip.</description>
     <iconPath>UI/Genes/Gene_Whiskers</iconPath>
     <graphicData>
       <graphicPaths>
         <li>Things/Pawn/Humanlike/HeadAttachments/Whiskers/Whiskers</li>
         <li>Things/Pawn/Humanlike/HeadAttachments/Whiskers/Whiskers2</li>
         <li>Things/Pawn/Humanlike/HeadAttachments/Whiskers/Whiskers3</li>
+        <li>Things/Pawn/Humanlike/HeadAttachments/Whiskers/Whiskers4</li>
+        <li>Things/Pawn/Humanlike/HeadAttachments/Whiskers/Whiskers5</li>
        </graphicPaths>
       <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
       <useSkinShader>true</useSkinShader>
       <layer>PostHeadgear</layer>
+      <drawLoc>HeadTop</drawLoc>
     </graphicData>
     <missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
     <displayCategory>Miscellaneous</displayCategory>
@@ -162,7 +186,7 @@
     <labelShortAdj>green</labelShortAdj>
     <description>Carriers of this gene produce a pigment that gives their skin a dusty red color.</description>
     <randomBrightnessFactor>0.2</randomBrightnessFactor>
-    <skinColorOverride>(63, 72, 49)</skinColorOverride>
+    <skinColorOverride>(60, 73, 52)</skinColorOverride>
     <displayOrderInCategory>65</displayOrderInCategory>
     <symbolPack>
       <prefixSymbols>
@@ -179,7 +203,7 @@
     <labelShortAdj>yellow</labelShortAdj>
     <description>Carriers of this gene produce a pigment that gives their skin a dusty blue color.</description>
     <randomBrightnessFactor>0.2</randomBrightnessFactor>
-    <skinColorOverride>(78, 74, 53)</skinColorOverride>
+    <skinColorOverride>(81, 77, 56)</skinColorOverride>
     <displayOrderInCategory>65</displayOrderInCategory>
     <symbolPack>
       <prefixSymbols>
@@ -196,7 +220,41 @@
     <labelShortAdj>brown</labelShortAdj>
     <description>Carriers of this gene produce a pigment that gives their skin a dusty purple color.</description>
     <randomBrightnessFactor>0.2</randomBrightnessFactor>
-    <skinColorOverride>(74, 63, 54)</skinColorOverride>
+    <skinColorOverride>(76, 64, 58)</skinColorOverride>
+    <displayOrderInCategory>65</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>dark</symbol></li>
+        <li><symbol>purple</symbol></li>
+        <li><symbol>dusty</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>Skin_CyanMuddy</defName>
+    <label>muddy cyan skin</label>
+    <labelShortAdj>cyan</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that gives their skin a dusty blue color.</description>
+    <randomBrightnessFactor>0.2</randomBrightnessFactor>
+    <skinColorOverride>(62, 81, 71)</skinColorOverride>
+    <displayOrderInCategory>65</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>dark</symbol></li>
+        <li><symbol>blue</symbol></li>
+        <li><symbol>dusty</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>Skin_OliveMuddy</defName>
+    <label>muddy olive skin</label>
+    <labelShortAdj>olive</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that gives their skin a dusty purple color.</description>
+    <randomBrightnessFactor>0.2</randomBrightnessFactor>
+    <skinColorOverride>(78, 89, 64)</skinColorOverride>
     <displayOrderInCategory>65</displayOrderInCategory>
     <symbolPack>
       <prefixSymbols>

@@ -23,7 +23,7 @@
         <graphicData>
           <texPath>Things/Filth/Spatter/SpatterA</texPath>
           <renderInstanced>true</renderInstanced>
-          <color>(74, 75, 54, 80)</color>
+          <color>(94, 95, 70, 80)</color>
         </graphicData>
         <altitudeLayer>MoteOverhead</altitudeLayer>
         <fadeInTime>0.04</fadeInTime>
