@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "MY7uS85pac/T0ZIKz/+F60xjiIkLUpC6iGwPrazqk56LhN/84NTk803p/Y9q6RAl5kR0FOLXQsXjEKhyq0ES2w==",
+  "success": true,
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\BoglegsXenotype\\Source\\Boglegs\\Boglegs.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Artemy\\.nuget\\packages\\krafs.publicizer\\2.2.1\\krafs.publicizer.2.2.1.nupkg.sha512",
+    "C:\\Users\\Artemy\\.nuget\\packages\\krafs.rimworld.ref\\1.4.3901\\krafs.rimworld.ref.1.4.3901.nupkg.sha512"
+  ],
+  "logs": []
+}
