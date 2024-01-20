@@ -3,18 +3,18 @@
   
     <HediffDef>
         <defName>Bogleg_FatHediff</defName>
-        <label>extra fat storage</label>
+        <label>fat storage</label>
         <description>This person has large fat stores capable of accumulating usable fat for dealing with starvation.</description>
-        <hediffClass>HediffWithComps</hediffClass>
+        <hediffClass>Boglegs.HediffFat</hediffClass>
         <initialSeverity>1</initialSeverity>
         <everCurableByItem>false</everCurableByItem>
         <comps>
           <li Class="Boglegs.HediffCompProperties_Fat">
-            <startThreshold>0.5</startThreshold>
-            <conversionRate>1</conversionRate>
+            <startThreshold>0.8</startThreshold>
+            <conversionRate>1.1</conversionRate>
             <starvationThreshold>0.1</starvationThreshold>
-            <starvationSpeed>0.2</starvationSpeed>
-            <conversionSpeed>0.2</conversionSpeed>
+            <starvationSpeed>0.002</starvationSpeed>
+            <conversionSpeed>0.002</conversionSpeed>
           </li>
         </comps>
       </HediffDef>
