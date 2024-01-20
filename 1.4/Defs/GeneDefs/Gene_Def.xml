@@ -46,6 +46,26 @@
   </GeneDef>
 
   <GeneDef>
+    <defName>DV_FatStorage</defName>
+    <label>extra fat storage</label>
+    <iconPath>UI/Genes/Gene_Silvertongued</iconPath>
+    <geneClass>Boglegs.Gene_Fat</geneClass>
+    <description>Carriers of this gene have a naturally persuasive and eloquent way in which they speak, making them better at convincing people and bartering.</description>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>fat</symbol></li>
+        <li><symbol>chubby</symbol></li>
+        <li><symbol>blubber</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>bodied</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef>
     <defName>DV_MuckSpit</defName>
     <label>muck spit</label>
     <description>Carriers grow glands in the neck that generate and store a sticky acid substance, along with acid-tolerant tissues in the mouth. They can spew this acid over an area, where it will stick to enemies and burn them over time.</description>
