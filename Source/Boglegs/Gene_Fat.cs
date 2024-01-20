@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using Mono.Unix.Native;
+using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,7 +37,7 @@ namespace Boglegs
 
     public class HediffComp_Fat : HediffComp
     {
-        private HediffCompProperties_Fat Props => props as HediffCompProperties_Fat;
+        public HediffCompProperties_Fat Props => props as HediffCompProperties_Fat;
 
         public float storedFat;
 
@@ -60,18 +61,22 @@ namespace Boglegs
         {
             base.CompPostTick(ref severityAdjustment);
 
-            Log.Message(need.CurLevel + "");
-
-            if (need.CurLevel > Props.startThreshold)
+            if (need.CurLevel > Props.startThreshold && storedFat < Props.maxFat)
             {
-                need.CurLevel -= Props.conversionSpeed * Props.conversionRate;
-                storedFat += Props.conversionSpeed;
+                need.CurLevel -= Math.Min(Props.conversionSpeed, Props.maxFat - storedFat) * Props.conversionRate;
+                storedFat += Math.Min(Props.conversionSpeed, Props.maxFat - storedFat);
             }
-            else if (need.CurLevel < Props.startThreshold && storedFat > 0)
+            else if (need.CurLevel < Props.starvationThreshold && storedFat > 0)
             {
                 need.CurLevel += Math.Min(storedFat, Props.starvationSpeed);
                 storedFat -= Math.Min(storedFat, Props.starvationSpeed);
             }
+        }
+
+        public override void CompExposeData()
+        {
+            base.CompExposeData();
+            Scribe_Values.Look(ref storedFat, "storedFat");
         }
     }
 
@@ -88,10 +93,61 @@ namespace Boglegs
         public float conversionSpeed;
         // Rate at which fat is spent, fat units per tick
         public float starvationSpeed;
+        // Maximum amount of nutrition that can be stored
+        public float maxFat;
+
+        // Curve for slowdown, 1 = 100% movespeed
+        public SimpleCurve slowdownCurve;
+        // Curve for blunt protection, 1 = 100% blunt protection
+        public SimpleCurve bluntProtectionCurve;
 
         public HediffCompProperties_Fat()
         {
             compClass = typeof(HediffComp_Fat);
+        }
+    }
+
+    public class HediffFat : HediffWithComps
+    {
+        private HediffComp_Fat cachedComp;
+        private HediffComp_Fat Comp
+        {
+            get
+            {
+                if (cachedComp == null)
+                {
+                    cachedComp = this.TryGetComp<HediffComp_Fat>();
+                }
+
+                return cachedComp;
+            }
+        }
+
+        private float cachedFat = -1f;
+        private HediffStage cachedStage;
+
+        public override HediffStage CurStage
+        {
+            get
+            {
+                if (cachedFat == Comp.storedFat)
+                {
+                    return cachedStage;
+                }
+
+                cachedFat = Comp.storedFat;
+                cachedStage = new HediffStage();
+                cachedStage.capMods = new List<PawnCapacityModifier>()
+                {
+                    new PawnCapacityModifier() { capacity = PawnCapacityDefOf.Moving, offset = Comp.Props.slowdownCurve.Evaluate(cachedFat) }
+                };
+                cachedStage.statOffsets = new List<StatModifier>()
+                {
+                    new StatModifier() { stat = StatDefOf.ArmorRating_Blunt, value = Comp.Props.bluntProtectionCurve.Evaluate(cachedFat) }
+                };
+
+                return cachedStage;
+            }
         }
     }
 }
