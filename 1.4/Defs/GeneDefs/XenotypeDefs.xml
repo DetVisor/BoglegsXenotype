@@ -20,6 +20,7 @@
     <li>DV_Silvertongued</li>
     <li>DV_MuckSpit</li>
 	  <li>Body_Fat</li>
+    <li>DV_FatStorage</li>
 	  <li>PsychicAbility_Dull</li>
     <li>MeleeDamage_Strong</li>
     <li MayRequire="Ludeon.RimWorld.Ideology">DV_IntimidatingPresence</li>

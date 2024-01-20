@@ -47,10 +47,10 @@
 
   <GeneDef>
     <defName>DV_FatStorage</defName>
-    <label>extra fat storage</label>
+    <label>blubber storage</label>
     <iconPath>UI/Genes/Gene_FatStorage</iconPath>
     <geneClass>Boglegs.Gene_Fat</geneClass>
-    <description>Carriers of this gene have a naturally persuasive and eloquent way in which they speak, making them better at convincing people and bartering.</description>
+    <description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
     <displayCategory>Miscellaneous</displayCategory>
     <displayOrderInCategory>50</displayOrderInCategory>
     <symbolPack>
@@ -68,7 +68,7 @@
   <GeneDef>
     <defName>DV_MuckSpit</defName>
     <label>muck spit</label>
-    <description>Carriers grow glands in the neck that generate and store a sticky acid substance, along with acid-tolerant tissues in the mouth. They can spew this acid over an area, where it will stick to enemies and burn them over time.</description>
+    <description>Carriers brew a disgusting sticky muck in a sack near their stomach, along with specialized pressurized air-sacks in their mouth. They can spew this muck over an area, where it will slow down and hinder enemies that walk over it.</description>
     <iconPath>UI/Genes/Gene_StickyMuck</iconPath>
     <displayCategory>Ability</displayCategory>
     <marketValueFactor>1.5</marketValueFactor>
@@ -96,7 +96,7 @@
   <GeneDef>
     <defName>DV_Jaw_FatSac</defName>
     <label>flabsack</label>
-    <description>Carriers of this gene develop a large sack of extra fat between their throat jaw and collarbones.</description>
+    <description>Carriers of this gene develop a large sack of extra fat between their throat, jaw and collarbones.</description>
     <iconPath>UI/Genes/Gene_FatSac</iconPath>
     <graphicData>
       <graphicPath>Things/Pawn/Humanlike/HeadAttachments/Fatsac/Fatsac</graphicPath>
