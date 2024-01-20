@@ -10,7 +10,6 @@
 		<cooldownTicksRange>12000</cooldownTicksRange>
 		<aiCanUse>true</aiCanUse>
 		<displayOrder>300</displayOrder>
-		<category>Ability</category>
 		<warmupStartSound>AcidSpray_Warmup</warmupStartSound>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
