@@ -4,14 +4,14 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/xenotypeSet/xenotypeChances</xpath>
 		<value>
-			<DV_Venator>0.06</DV_Venator>
+			<DV_Bogleg>0.06</DV_Bogleg>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/FactionDef[defName="Pirate"]/xenotypeSet/xenotypeChances</xpath>
 		<value>
-			<DV_Venator>0.08</DV_Venator>
+			<DV_Bogleg>0.04</DV_Bogleg>
 		</value>
 	</Operation>
 	

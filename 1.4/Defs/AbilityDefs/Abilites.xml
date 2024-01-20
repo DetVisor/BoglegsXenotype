@@ -6,11 +6,11 @@
 		<label>muck spit</label>
 		<description>Eject a projectile that explodes on impact and creates a large amount of filth that greatly slows down people trying to move through it.</description>
 		<iconPath>UI/Genes/Gene_StickyMuck</iconPath>
-    <charges>2</charges>
+        <charges>2</charges>
 		<cooldownTicksRange>12000</cooldownTicksRange>
 		<aiCanUse>true</aiCanUse>
 		<displayOrder>300</displayOrder>
-		<category>Abilities</category>
+		<category>Ability</category>
 		<warmupStartSound>AcidSpray_Warmup</warmupStartSound>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
