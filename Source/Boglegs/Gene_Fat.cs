@@ -100,6 +100,8 @@ namespace Boglegs
         public SimpleCurve slowdownCurve;
         // Curve for blunt protection, 1 = 100% blunt protection
         public SimpleCurve bluntProtectionCurve;
+        // Curve for additional meat amount
+        public SimpleCurve meatCurve;
 
         public HediffCompProperties_Fat()
         {
@@ -143,7 +145,8 @@ namespace Boglegs
                 };
                 cachedStage.statOffsets = new List<StatModifier>()
                 {
-                    new StatModifier() { stat = StatDefOf.ArmorRating_Blunt, value = Comp.Props.bluntProtectionCurve.Evaluate(cachedFat) }
+                    new StatModifier() { stat = StatDefOf.ArmorRating_Blunt, value = Comp.Props.bluntProtectionCurve.Evaluate(cachedFat) },
+                    new StatModifier() { stat = StatDefOf.MeatAmount, value = Comp.Props.meatCurve.Evaluate(cachedFat) }
                 };
 
                 return cachedStage;
