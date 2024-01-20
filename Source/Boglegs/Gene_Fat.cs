@@ -40,7 +40,7 @@ namespace Boglegs
 
         public float storedFat;
 
-        public override string CompLabelInBracketsExtra => Math.Round(storedFat).ToString() + "nutrition stored";
+        public override string CompTipStringExtra => Math.Round(storedFat * 100).ToString() + " nutrition stored";
 
         private Need_Food cachedNeed;
         private Need_Food need
@@ -59,6 +59,8 @@ namespace Boglegs
         public override void CompPostTick(ref float severityAdjustment)
         {
             base.CompPostTick(ref severityAdjustment);
+
+            Log.Message(need.CurLevel + "");
 
             if (need.CurLevel > Props.startThreshold)
             {
