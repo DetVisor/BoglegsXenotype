@@ -48,7 +48,7 @@
   <GeneDef>
     <defName>DV_FatStorage</defName>
     <label>extra fat storage</label>
-    <iconPath>UI/Genes/Gene_Silvertongued</iconPath>
+    <iconPath>UI/Genes/Gene_FatStorage</iconPath>
     <geneClass>Boglegs.Gene_Fat</geneClass>
     <description>Carriers of this gene have a naturally persuasive and eloquent way in which they speak, making them better at convincing people and bartering.</description>
     <displayCategory>Miscellaneous</displayCategory>
