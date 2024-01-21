@@ -43,12 +43,12 @@ namespace Boglegs
 
         public override string CompTipStringExtra => Math.Round(storedFat * 100).ToString() + " nutrition stored";
 
-        private Need_Food cachedNeed;
-        private Need_Food need
+        public Need_Food cachedNeed;
+        public Need_Food need
         {
             get
             {
-                if (cachedNeed == null)
+                if (cachedNeed == null || cachedNeed.pawn == null)
                 {
                     cachedNeed = parent.pawn.needs.TryGetNeed<Need_Food>();
                 }
@@ -151,6 +151,12 @@ namespace Boglegs
 
                 return cachedStage;
             }
+        }
+
+        public override void Notify_PawnDied()
+        {
+            base.Notify_PawnDied();
+            Comp.cachedNeed = null;
         }
     }
 }
