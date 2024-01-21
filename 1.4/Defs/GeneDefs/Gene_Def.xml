@@ -53,6 +53,9 @@
     <description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
     <displayCategory>Miscellaneous</displayCategory>
     <displayOrderInCategory>50</displayOrderInCategory>
+    <customEffectDescriptions>
+      <li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+    </customEffectDescriptions>
     <symbolPack>
       <prefixSymbols>
         <li><symbol>fat</symbol></li>
@@ -172,6 +175,7 @@
         <li>Things/Pawn/Humanlike/HeadAttachments/Whiskers/Whiskers3</li>
         <li>Things/Pawn/Humanlike/HeadAttachments/Whiskers/Whiskers4</li>
         <li>Things/Pawn/Humanlike/HeadAttachments/Whiskers/Whiskers5</li>
+        <li>Things/Pawn/Humanlike/HeadAttachments/Whiskers/Whiskers6</li>
        </graphicPaths>
       <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
       <useSkinShader>true</useSkinShader>
