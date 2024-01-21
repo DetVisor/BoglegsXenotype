@@ -5,7 +5,7 @@
     <defName>DV_IntimidatingPresence</defName>
     <label>intimidating presence</label>
     <iconPath>UI/Genes/Gene_IntimidatingPresence</iconPath>
-    <description>Carriers of this gene have a naturally persuasive and eloquent way in which they speak, making them better at convincing people and bartering.</description>
+    <description>Carriers of this gene have wide shoulders and a threatening face structure which makes slaves more prone to listening to them.</description>
     <displayCategory>Miscellaneous</displayCategory>
     <displayOrderInCategory>50</displayOrderInCategory>
     <statOffsets>
@@ -30,7 +30,7 @@
     <displayCategory>Miscellaneous</displayCategory>
     <displayOrderInCategory>50</displayOrderInCategory>
     <statOffsets>
-      <NegotiationAbility>0.18</NegotiationAbility>
+      <NegotiationAbility>0.15</NegotiationAbility>
     </statOffsets>
     <biostatMet>-1</biostatMet>
     <symbolPack>
@@ -81,10 +81,10 @@
     <biostatMet>-1</biostatMet>
     <symbolPack>
       <prefixSymbols>
-        <li><symbol>acid</symbol></li>
-        <li><symbol>acer</symbol></li>
-        <li><symbol>acri</symbol></li>
-        <li><symbol>oxo</symbol></li>
+        <li><symbol>muck</symbol></li>
+        <li><symbol>goo</symbol></li>
+        <li><symbol>goop</symbol></li>
+        <li><symbol>slime</symbol></li>
       </prefixSymbols>
       <suffixSymbols>
         <li><symbol>sprayer</symbol></li>
@@ -136,7 +136,7 @@
     <defName>DV_Materialistic</defName>
     <label>materialistic</label>
     <labelShortAdj>greedy</labelShortAdj>
-    <description>Carriers of this gene are high in trait agreeableness and are very conscientious. They rarely insult others and will sometimes offer kind words to brighten the moods of those around them. They also never judge people by their appearance.</description>
+    <description>Carriers of this gene are annoyingly greedy and jealous of others. They always want more and richer goods, and will be sad when they don't get them.</description>
     <iconPath>UI/Genes/Gene_Materialistic</iconPath>
     <displayCategory>Miscellaneous</displayCategory>
     <displayOrderInCategory>60</displayOrderInCategory>
@@ -178,23 +178,24 @@
       <layer>PostHeadgear</layer>
       <drawLoc>HeadTop</drawLoc>
     </graphicData>
-    <missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+    <missingGeneRomanceChanceFactor>0.8</missingGeneRomanceChanceFactor>
     <displayCategory>Miscellaneous</displayCategory>
     <displayOrderInCategory>410</displayOrderInCategory>
     <symbolPack>
       <prefixSymbols>
-        <li><symbol>pig</symbol></li>
-        <li><symbol>pork</symbol></li>
-        <li><symbol>snout</symbol></li>
-        <li><symbol>boar</symbol></li>
-        <li><symbol>hog</symbol></li>
+        <li><symbol>whisker</symbol></li>
+        <li><symbol>catfish</symbol></li>
+        <li><symbol>barbels</symbol></li>
+        <li><symbol>antennae</symbol></li>
+        <li><symbol>receptors</symbol></li>
+        <li><symbol>nose</symbol></li>
       </prefixSymbols>
       <suffixSymbols>
-        <li><symbol>pig</symbol></li>
-        <li><symbol>snout</symbol></li>
-        <li><symbol>swine</symbol></li>
-        <li><symbol>boar</symbol></li>
-        <li><symbol>hog</symbol></li>
+        <li><symbol>whisker</symbol></li>
+        <li><symbol>catfish</symbol></li>
+        <li><symbol>barbels</symbol></li>
+        <li><symbol>antennae</symbol></li>
+        <li><symbol>receptors</symbol></li>
         <li><symbol>nose</symbol></li>
       </suffixSymbols>
     </symbolPack>
@@ -204,15 +205,15 @@
     <defName>Skin_GreenMuddy</defName>
     <label>muddy green skin</label>
     <labelShortAdj>green</labelShortAdj>
-    <description>Carriers of this gene produce a pigment that gives their skin a dusty red color.</description>
+    <description>Carriers of this gene produce a pigment that gives their skin a muddy green color.</description>
     <randomBrightnessFactor>0.2</randomBrightnessFactor>
     <skinColorOverride>(60, 73, 52)</skinColorOverride>
     <displayOrderInCategory>65</displayOrderInCategory>
     <symbolPack>
       <prefixSymbols>
-        <li><symbol>dark</symbol></li>
-        <li><symbol>red</symbol></li>
-        <li><symbol>dusty</symbol></li>
+        <li><symbol>muddy</symbol></li>
+        <li><symbol>green</symbol></li>
+        <li><symbol>gross</symbol></li>
       </prefixSymbols>
     </symbolPack>
   </GeneDef>
@@ -221,15 +222,15 @@
     <defName>Skin_YellowMuddy</defName>
     <label>muddy yellow skin</label>
     <labelShortAdj>yellow</labelShortAdj>
-    <description>Carriers of this gene produce a pigment that gives their skin a dusty blue color.</description>
+    <description>Carriers of this gene produce a pigment that gives their skin a muddy yellow color.</description>
     <randomBrightnessFactor>0.2</randomBrightnessFactor>
     <skinColorOverride>(81, 77, 56)</skinColorOverride>
     <displayOrderInCategory>65</displayOrderInCategory>
     <symbolPack>
       <prefixSymbols>
-        <li><symbol>dark</symbol></li>
-        <li><symbol>blue</symbol></li>
-        <li><symbol>dusty</symbol></li>
+        <li><symbol>muddy</symbol></li>
+        <li><symbol>yellow</symbol></li>
+        <li><symbol>gross</symbol></li>
       </prefixSymbols>
     </symbolPack>
   </GeneDef>
@@ -238,15 +239,15 @@
     <defName>Skin_BrownMuddy</defName>
     <label>muddy brown skin</label>
     <labelShortAdj>brown</labelShortAdj>
-    <description>Carriers of this gene produce a pigment that gives their skin a dusty purple color.</description>
+    <description>Carriers of this gene produce a pigment that gives their skin a muddy brown color.</description>
     <randomBrightnessFactor>0.2</randomBrightnessFactor>
     <skinColorOverride>(76, 64, 58)</skinColorOverride>
     <displayOrderInCategory>65</displayOrderInCategory>
     <symbolPack>
       <prefixSymbols>
-        <li><symbol>dark</symbol></li>
-        <li><symbol>purple</symbol></li>
-        <li><symbol>dusty</symbol></li>
+        <li><symbol>muddy</symbol></li>
+        <li><symbol>brown</symbol></li>
+        <li><symbol>gross</symbol></li>
       </prefixSymbols>
     </symbolPack>
   </GeneDef>
@@ -255,15 +256,15 @@
     <defName>Skin_CyanMuddy</defName>
     <label>muddy cyan skin</label>
     <labelShortAdj>cyan</labelShortAdj>
-    <description>Carriers of this gene produce a pigment that gives their skin a dusty blue color.</description>
+    <description>Carriers of this gene produce a pigment that gives their skin a muddy cyan color.</description>
     <randomBrightnessFactor>0.2</randomBrightnessFactor>
     <skinColorOverride>(62, 81, 71)</skinColorOverride>
     <displayOrderInCategory>65</displayOrderInCategory>
     <symbolPack>
       <prefixSymbols>
-        <li><symbol>dark</symbol></li>
-        <li><symbol>blue</symbol></li>
-        <li><symbol>dusty</symbol></li>
+        <li><symbol>muddy</symbol></li>
+        <li><symbol>cyan</symbol></li>
+        <li><symbol>gross</symbol></li>
       </prefixSymbols>
     </symbolPack>
   </GeneDef>
@@ -272,15 +273,15 @@
     <defName>Skin_OliveMuddy</defName>
     <label>muddy olive skin</label>
     <labelShortAdj>olive</labelShortAdj>
-    <description>Carriers of this gene produce a pigment that gives their skin a dusty purple color.</description>
+    <description>Carriers of this gene produce a pigment that gives their skin a muddy olive color.</description>
     <randomBrightnessFactor>0.2</randomBrightnessFactor>
     <skinColorOverride>(78, 89, 64)</skinColorOverride>
     <displayOrderInCategory>65</displayOrderInCategory>
     <symbolPack>
       <prefixSymbols>
-        <li><symbol>dark</symbol></li>
-        <li><symbol>purple</symbol></li>
-        <li><symbol>dusty</symbol></li>
+        <li><symbol>muddy</symbol></li>
+        <li><symbol>olive</symbol></li>
+        <li><symbol>gross</symbol></li>
       </prefixSymbols>
     </symbolPack>
   </GeneDef>
