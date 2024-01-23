@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+		<defName>DV_Handwear_KnuckleDusters</defName>
+		<label>knuckle dusters</label>
+		<description>A simple pair of gloves.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Handwear/KnuckleDusters</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+        <generateCommonality>0.02</generateCommonality>
+		<stuffCategories>
+            <li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<statBases>
+			<MaxHitPoints>125</MaxHitPoints>
+			<WorkToMake>2200</WorkToMake>
+			<Mass>0.5</Mass>
+            <EquipDelay>1.2</EquipDelay>
+		</statBases>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Hands</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>IndustrialBasic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+            </defaultOutfitTags>
+		</apparel>
+        <comps>
+            <li Class="CompProperties_CauseHediff_Apparel">
+              <hediff>DV_KnuckleDusters</hediff>
+              <part>Head</part>
+            </li>
+          </comps>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+    </ThingDef>
+
+</Defs>
