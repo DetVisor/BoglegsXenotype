@@ -11,6 +11,7 @@
     <statOffsets>
       <SuppressionPower>1.25</SuppressionPower>
     </statOffsets>
+    <biostatCpx>1</biostatCpx>
     <symbolPack>
       <prefixSymbols>
         <li><symbol>intimidat</symbol></li>
@@ -32,6 +33,7 @@
     <statOffsets>
       <NegotiationAbility>0.15</NegotiationAbility>
     </statOffsets>
+    <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
     <symbolPack>
       <prefixSymbols>
@@ -56,6 +58,7 @@
     <customEffectDescriptions>
       <li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
     </customEffectDescriptions>
+    <biostatCpx>1</biostatCpx>
     <symbolPack>
       <prefixSymbols>
         <li><symbol>fat</symbol></li>
@@ -71,7 +74,7 @@
   <GeneDef>
     <defName>DV_MuckSpit</defName>
     <label>muck spit</label>
-    <description>Carriers brew a disgusting sticky muck in a sack near their stomach, along with specialized pressurized air-sacks in their mouth. They can spew this muck over an area, where it will slow down and hinder enemies that walk over it.</description>
+    <description>Carriers brew a disgusting sticky muck in a pouch near their stomach, along with specialized pressurized air-sacks in their mouth. They can spew this muck over an area, where it will slow down and hinder enemies that walk over it.</description>
     <iconPath>UI/Genes/Gene_StickyMuck</iconPath>
     <displayCategory>Ability</displayCategory>
     <marketValueFactor>1.5</marketValueFactor>
@@ -81,6 +84,7 @@
     <descriptionHyperlinks>
       <AbilityDef>DV_MuckSpit</AbilityDef>
     </descriptionHyperlinks>
+    <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
     <symbolPack>
       <prefixSymbols>
@@ -148,6 +152,7 @@
         <def>Greedy</def>
       </li>
     </forcedTraits>
+    <biostatCpx>1</biostatCpx>
     <biostatMet>1</biostatMet>
     <symbolPack>
       <prefixSymbols>
@@ -175,7 +180,6 @@
         <li>Things/Pawn/Humanlike/HeadAttachments/Whiskers/Whiskers3</li>
         <li>Things/Pawn/Humanlike/HeadAttachments/Whiskers/Whiskers4</li>
         <li>Things/Pawn/Humanlike/HeadAttachments/Whiskers/Whiskers5</li>
-        <li>Things/Pawn/Humanlike/HeadAttachments/Whiskers/Whiskers6</li>
        </graphicPaths>
       <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
       <useSkinShader>true</useSkinShader>
@@ -183,7 +187,7 @@
       <drawLoc>HeadTop</drawLoc>
     </graphicData>
     <missingGeneRomanceChanceFactor>0.8</missingGeneRomanceChanceFactor>
-    <displayCategory>Miscellaneous</displayCategory>
+    <displayCategory>Cosmetic</displayCategory>
     <displayOrderInCategory>410</displayOrderInCategory>
     <symbolPack>
       <prefixSymbols>

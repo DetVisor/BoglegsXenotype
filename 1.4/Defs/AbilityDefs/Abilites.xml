@@ -4,7 +4,7 @@
   <AbilityDef>
 		<defName>DV_MuckSpit</defName>
 		<label>muck spit</label>
-		<description>Eject a projectile that explodes on impact and creates a large amount of filth that greatly slows down people trying to move through it.</description>
+		<description>Spew a disgusting muck over an area that hinders the movement of enemies.</description>
 		<iconPath>UI/Genes/Gene_StickyMuck</iconPath>
         <charges>2</charges>
 		<cooldownTicksRange>12000</cooldownTicksRange>

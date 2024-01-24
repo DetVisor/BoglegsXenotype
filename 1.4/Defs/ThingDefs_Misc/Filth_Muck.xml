@@ -9,7 +9,7 @@
      <Cleanliness>-10</Cleanliness>
    </statBases>
     <passability>PassThroughOnly</passability>
-   <pathCost>70</pathCost>
+   <pathCost>30</pathCost>
    <graphicData>
       <texPath>Things/Filth/PoolSoft</texPath>
       <color>(74, 75, 54, 180)</color>

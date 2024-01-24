@@ -4,7 +4,7 @@
     <ThingDef ParentName="ApparelMakeableBase">
 		<defName>DV_Handwear_KnuckleDusters</defName>
 		<label>knuckle dusters</label>
-		<description>A simple pair of gloves.</description>
+		<description>A pair of metal knuckle dusters. They concentrate the force of a punch into a smaller area, which results in more damage.</description>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Handwear/KnuckleDusters</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

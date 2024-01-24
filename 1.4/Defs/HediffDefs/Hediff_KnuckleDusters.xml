@@ -4,7 +4,7 @@
   <HediffDef>
     <defName>DV_KnuckleDusters</defName>
     <label>knuckle dusters</label>
-    <description>A crown-like headpiece with stubby spikes that poke the head uncomfortably. It is used to put the wearer in pain.</description>
+    <description>A pair of metal knuckle dusters. They concentrate the force of a punch into a smaller area, which results in more damage.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <scenarioCanAdd>false</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
