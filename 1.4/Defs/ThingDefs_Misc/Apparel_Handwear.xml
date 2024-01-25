@@ -6,6 +6,10 @@
 		<label>knuckle dusters</label>
 		<description>A pair of metal knuckle dusters. They concentrate the force of a punch into a smaller area, which results in more damage.</description>
 		<smeltable>true</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<thingCategories>
+			<li>ApparelUtility</li>
+		  </thingCategories>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Handwear/KnuckleDusters</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -46,11 +50,22 @@
             </li>
           </comps>
 		<recipeMaker>
-			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
 			<recipeUsers Inherit="False">
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
 			</recipeUsers>
+			<defaultIngredientFilter>
+				<categories>
+				  <li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+				  <li>Jade</li>
+				</disallowedThingDefs>
+			  </defaultIngredientFilter>
 		</recipeMaker>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
     </ThingDef>
