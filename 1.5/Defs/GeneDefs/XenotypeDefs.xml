@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <XenotypeDef>
+    <defName>DV_Bogleg</defName>
+    <label>bogleg</label>
+    <description>Graced with a brutish physique and silver-tongued eloquence, the Boglegs are perfectly engineered to survive in hostile, plague-ridden swamps as well as in arguments. These unsightly specimen pursue the satisfaction of their genetically induced greed by persuading or pummeling the opposition into a mutually beneficial arrangement. Boglegs pride themselves on their enlarged physique, which also allows them to resist blunt blows and sustain themselves on nothing for long stretches of time. This same mass also gives more strength to their blows, but slsows them down considerably. If they weren't disgusting enough, Boglegs are also capable of puking up a sticky muck that can slow down any poor passer-by or threat that is forced to walk upon it.\n\nDue to their often ambitious goals of satisfying their material desires, their oddly charismatic nature and propensity for violent negotiations, Boglegs tend to achieve high-ranking positions, which they occupy with the grace of a bloated slug, but the guile and wit unrivaled by many of their distant cousins. Hailing from a batch of modified test subjects spread across the galaxy, Boglegs took on an almost catfish-like form, with barbels and thick blubbery skin which allows them to float through their bayous virtually unscathed by parasites. Thanks to the size and natural persuasion of Boglegs, they make much better wardens and slavers, as such many of them are commonly found leading slaver caravans, underground gladiator rings and even brothels.</description>
+    <descriptionShort>Graced with a brutish physique and silver-tongued eloquence, the Boglegs are perfectly engineered to survive in hostile, plague-ridden swamps as well as in arguments. These unsightly specimen pursue the satisfaction of their genetically induced greed by persuading or pummeling the opposition into a mutually beneficial arrangement. Boglegs pride themselves on their enlarged physique, which also allows them to resist blunt blows and sustain themselves on nothing for long stretches of time. This same mass also gives more strength to their blows, but slsows them down considerably. If they weren't disgusting enough, Boglegs are also capable of puking up a sticky muck that can slow down any poor passer-by or threat that is forced to walk upon it.</descriptionShort>
+    <iconPath>UI/Xenotypes/Boglegs</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+	  <li>MoveSpeed_Slow</li>
+	  <li>MaxTemp_SmallIncrease</li>
+	  <li>Beard_NoBeardOnly</li>
+    <li>Hair_BaldOnly</li>
+    <li>Head_Gaunt</li>
+    <li>DV_Nose_Whiskers</li>
+	  <li>DV_Jaw_FatSac</li>
+	  <li>DV_Materialistic</li>
+    <li>DV_Silvertongued</li>
+    <li>DV_MuckSpit</li>
+	  <li>Body_Fat</li>
+    <li>DV_FatStorage</li>
+	  <li>PsychicAbility_Dull</li>
+    <li>MeleeDamage_Strong</li>
+    <li MayRequire="Ludeon.RimWorld.Ideology">DV_IntimidatingPresence</li>
+    <li>Immunity_Strong</li>
+    <li>Beauty_Ugly</li>
+    <li>FacialRidges</li>
+    <li>AptitudePoor_Shooting</li>
+    <li>AptitudeRemarkable_Social</li>
+	  <li>Skin_GreenMuddy</li>
+    <li>Skin_BrownMuddy</li>
+	  <li>Skin_YellowMuddy</li>
+    <li>Skin_CyanMuddy</li>
+	  <li>Skin_OliveMuddy</li>
+    </genes>
+  </XenotypeDef>
+
+</Defs>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+    <HediffDef>
+        <defName>Bogleg_FatHediff</defName>
+        <label>stored blubber</label>
+        <description>This pawn has large fat stores capable of accumulating usable fat for dealing with starvation.</description>
+        <hediffClass>Boglegs.HediffFat</hediffClass>
+        <initialSeverity>1</initialSeverity>
+        <everCurableByItem>false</everCurableByItem>
+        <comps>
+          <li Class="Boglegs.HediffCompProperties_Fat">
+            <startThreshold>0.8</startThreshold>
+            <conversionRate>1.1</conversionRate>
+            <maxFat>0.4</maxFat>
+            <starvationThreshold>0.1</starvationThreshold>
+            <starvationSpeed>0.002</starvationSpeed>
+            <conversionSpeed>0.002</conversionSpeed>
+
+            <slowdownCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(0.10, -0.02)</li>
+                <li>(0.20, -0.06)</li>
+                <li>(0.30, -0.12)</li>
+                <li>(0.40, -0.16)</li>
+              </points>
+            </slowdownCurve>
+
+            <bluntProtectionCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(0.10, 0.04)</li>
+                <li>(0.20, 0.08)</li>
+                <li>(0.30, 0.12)</li>
+                <li>(0.40, 0.15)</li>
+              </points>
+            </bluntProtectionCurve>
+
+            <meatCurve>
+              <points>
+                <li>(0, 0)</li>
+                <li>(0.10, 5)</li>
+                <li>(0.20, 10)</li>
+                <li>(0.30, 20)</li>
+                <li>(0.40, 30)</li>
+              </points>
+            </meatCurve>
+          </li>
+        </comps>
+      </HediffDef>
+
+</Defs>
