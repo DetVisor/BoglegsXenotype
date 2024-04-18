@@ -153,9 +153,9 @@ namespace Boglegs
             }
         }
 
-        public override void Notify_PawnDied()
+        public override void Notify_PawnDied(DamageInfo? dinfo, Hediff culprit = null)
         {
-            base.Notify_PawnDied();
+            base.Notify_PawnDied(dinfo, culprit);
             Comp.cachedNeed = null;
         }
     }
