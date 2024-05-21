@@ -41,7 +41,7 @@ namespace Boglegs
 
         public float storedFat;
 
-        public override string CompTipStringExtra => "Boglegs.StoredNutrition".Translate(storedFat.ToStringPercent());
+        public override string CompTipStringExtra => "Boglegs.StoredNutrition".Translate(Math.Round(storedFat, 2));
 
         public Need_Food cachedNeed;
         public Need_Food need
