@@ -21,7 +21,6 @@
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>smartkar.athenaframework</li>
 	</loadAfter>
-	<modIconPath IgnoreIfNoMatchingField="True">UI/Xenotypes/Boglegs</modIconPath>
 	<packageId>det.boglegs</packageId>
 	<description>This mod introduces a greedy, social-focused xenotype with an affinity for trade, barter, and food.</description>
 </ModMetaData>
