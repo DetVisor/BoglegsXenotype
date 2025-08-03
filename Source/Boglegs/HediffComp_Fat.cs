@@ -13,7 +13,7 @@ namespace Boglegs
         public override string CompTipStringExtra => "Boglegs.StoredNutrition".Translate(Math.Round(storedFat, 2));
 
         public Need_Food cachedNeed;
-        public Need_Food need => cachedNeed ?? (cachedNeed = parent.pawn.needs.TryGetNeed<Need_Food>());
+        public Need_Food need => cachedNeed ??= parent.pawn.needs.TryGetNeed<Need_Food>();
 
         public override void CompPostTick(ref float severityAdjustment)
         {

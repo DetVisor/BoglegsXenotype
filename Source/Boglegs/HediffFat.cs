@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using RimWorld;
+﻿using RimWorld;
 using UnityEngine;
 using Verse;
 
@@ -25,15 +24,12 @@ namespace Boglegs
                 cachedFat = Comp.storedFat;
                 cachedStage = new HediffStage
                 {
-                    capMods = new List<PawnCapacityModifier>
-                    {
-                        new PawnCapacityModifier { capacity = PawnCapacityDefOf.Moving, offset = Comp.Props.slowdownCurve.Evaluate(cachedFat) }
-                    },
-                    statOffsets = new List<StatModifier>
-                    {
+                    capMods = [new PawnCapacityModifier { capacity = PawnCapacityDefOf.Moving, offset = Comp.Props.slowdownCurve.Evaluate(cachedFat) }],
+                    statOffsets =
+                    [
                         new StatModifier { stat = StatDefOf.ArmorRating_Blunt, value = Comp.Props.bluntProtectionCurve.Evaluate(cachedFat) },
                         new StatModifier { stat = StatDefOf.MeatAmount, value = Comp.Props.meatCurve.Evaluate(cachedFat) }
-                    }
+                    ]
                 };
 
                 return cachedStage;

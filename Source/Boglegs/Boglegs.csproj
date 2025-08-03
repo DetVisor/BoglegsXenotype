@@ -43,7 +43,7 @@
     </ItemGroup>
     <ItemGroup>
         <None Include="../../About/**" Exclude="../../About/*.png~" LinkBase="About" />
-        <None Include="../../.gitignore;../../.gitattributes" />
+        <None Include="../../.gitignore;../../.gitattributes;../../loadFolders.xml;../../_PublisherPlus.xml" />
     </ItemGroup>
     <ItemGroup>
         <Reference Include="Assembly-CSharp">
