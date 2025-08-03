@@ -29,6 +29,7 @@ namespace Boglegs
 
         public void ApplyFatChanges(int multiplier)
         {
+            if (need == null) return;
             if (need.CurLevel > Props.startThreshold && storedFat < Props.maxFat)
             {
                 need.CurLevel -= Math.Min(Props.conversionSpeed, Props.maxFat - storedFat) * multiplier * Props.conversionRate;
