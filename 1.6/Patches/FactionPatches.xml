@@ -14,5 +14,12 @@
 			<DV_Bogleg>0.06</DV_Bogleg>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="TradersGuild"]/xenotypeSet/xenotypeChances</xpath>
+		<value>
+			<DV_Bogleg>0.08</DV_Bogleg>
+		</value>
+	</Operation>
 	
 </Patch>
