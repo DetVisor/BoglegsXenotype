@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>DV_IntimidatingPresence</defName>
+    <label>intimidating presence</label>
+    <iconPath>UI/Genes/Gene_IntimidatingPresence</iconPath>
+    <description>Carriers of this gene have wide shoulders and a threatening face structure which makes slaves more prone to listening to them.</description>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <statOffsets>
+      <SuppressionPower>1.25</SuppressionPower>
+    </statOffsets>
+    <biostatCpx>1</biostatCpx>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>intimidat</symbol></li>
+        <li><symbol>terrify</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>ing</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DV_Silvertongued</defName>
+    <label>silvertongued</label>
+    <iconPath>UI/Genes/Gene_Silvertongued</iconPath>
+    <description>Carriers of this gene have a naturally persuasive and eloquent way in which they speak, making them better at convincing people and bartering.</description>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <statOffsets>
+      <NegotiationAbility>0.15</NegotiationAbility>
+    </statOffsets>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>sly</symbol></li>
+        <li><symbol>silver</symbol></li>
+        <li><symbol>quick</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>tongued</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DV_FatStorage</defName>
+    <label>blubber storage</label>
+    <iconPath>UI/Genes/Gene_FatStorage</iconPath>
+    <geneClass>Boglegs.Gene_Fat</geneClass>
+    <description>Carriers develop large sacks of extra fat storage across their body which can store nutrients and lipids, aside from making them more resistant to blunt damage and slower, it allows carriers to burn said nutrition to prevent starvation.</description>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <customEffectDescriptions>
+      <li>Allows the carrier to store nutrition for later use, buffing blunt armor but lowering movement speed as it builds up.</li>
+    </customEffectDescriptions>
+    <biostatCpx>1</biostatCpx>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>fat</symbol></li>
+        <li><symbol>chubby</symbol></li>
+        <li><symbol>blubber</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>bodied</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DV_MuckSpit</defName>
+    <label>muck spit</label>
+    <description>Carriers brew a disgusting sticky muck in a pouch near their stomach, along with specialized pressurized air-sacks in their mouth. They can spew this muck over an area, where it will slow down and hinder enemies that walk over it.</description>
+    <iconPath>UI/Genes/Gene_StickyMuck</iconPath>
+    <displayCategory>Ability</displayCategory>
+    <marketValueFactor>1.5</marketValueFactor>
+    <abilities>
+      <li>DV_MuckSpit</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>DV_MuckSpit</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>muck</symbol></li>
+        <li><symbol>goo</symbol></li>
+        <li><symbol>goop</symbol></li>
+        <li><symbol>slime</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>sprayer</symbol></li>
+        <li><symbol>spitter</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DV_Jaw_FatSac</defName>
+    <label>flabsack</label>
+    <description>Carriers of this gene develop a large sack of extra fat between their throat, jaw and collarbones.</description>
+    <iconPath>UI/Genes/Gene_FatSac</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/Fatsac/Fatsac</texPath>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <useSkinShader>true</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <colorType>Skin</colorType>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <visibleFacing>
+          <li>East</li>
+          <li>South</li>
+          <li>West</li>
+        </visibleFacing>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <biostatCpx>0</biostatCpx>
+    <endogeneCategory>Jaw</endogeneCategory>
+    <displayCategory>Cosmetic</displayCategory>
+    <randomChosen>true</randomChosen>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <displayOrderInCategory>410</displayOrderInCategory>
+    <exclusionTags/>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>fat</symbol></li>
+        <li><symbol>chub</symbol></li>
+        <li><symbol>slob</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>fat</symbol></li>
+        <li><symbol>chub</symbol></li>
+        <li><symbol>slob</symbol></li>
+        <li><symbol>face</symbol></li>
+        <li><symbol>neck</symbol></li>
+        <li><symbol>jaw</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DV_Materialistic</defName>
+    <label>materialistic</label>
+    <labelShortAdj>greedy</labelShortAdj>
+    <description>Carriers of this gene are annoyingly greedy and jealous of others. They always want more and richer goods, and will be sad when they don't get them.</description>
+    <iconPath>UI/Genes/Gene_Materialistic</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>60</displayOrderInCategory>
+    <forcedTraits>
+      <li>
+        <def>Greedy</def>
+      </li>
+    </forcedTraits>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>1</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>greedy</symbol>
+          <weight>3</weight>
+        </li>
+        <li><symbol>gluttonous</symbol></li>
+        <li><symbol>avaricious</symbol></li>
+        <li><symbol>hoarding</symbol></li>
+        <li><symbol>avid</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneNoseBase">
+    <defName>DV_Nose_Whiskers</defName>
+    <label>barbels</label>
+    <description>Carriers of this gene grow fleshy barbel-like appendages on their upper lip.</description>
+    <iconPath>UI/Genes/Gene_Whiskers</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <colorType>Skin</colorType>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+       <texPaths>
+        <li>Things/Pawn/Humanlike/HeadAttachments/Whiskers/Whiskers</li>
+        <li>Things/Pawn/Humanlike/HeadAttachments/Whiskers/Whiskers2</li>
+        <li>Things/Pawn/Humanlike/HeadAttachments/Whiskers/Whiskers3</li>
+        <li>Things/Pawn/Humanlike/HeadAttachments/Whiskers/Whiskers4</li>
+        <li>Things/Pawn/Humanlike/HeadAttachments/Whiskers/Whiskers5</li>
+       </texPaths>
+      <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+      <drawData>
+        <defaultData>
+          <layer>80</layer>
+        </defaultData>
+        <dataNorth>
+          <layer>10</layer>
+        </dataNorth>
+      </drawData>
+    </li>
+  </renderNodeProperties>
+    <missingGeneRomanceChanceFactor>0.8</missingGeneRomanceChanceFactor>
+    <displayCategory>Cosmetic</displayCategory>
+    <displayOrderInCategory>410</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>whisker</symbol></li>
+        <li><symbol>catfish</symbol></li>
+        <li><symbol>barbels</symbol></li>
+        <li><symbol>antennae</symbol></li>
+        <li><symbol>receptors</symbol></li>
+        <li><symbol>nose</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>whisker</symbol></li>
+        <li><symbol>catfish</symbol></li>
+        <li><symbol>barbels</symbol></li>
+        <li><symbol>antennae</symbol></li>
+        <li><symbol>receptors</symbol></li>
+        <li><symbol>nose</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>Skin_GreenMuddy</defName>
+    <label>muddy green skin</label>
+    <labelShortAdj>green</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that gives their skin a muddy green color.</description>
+    <randomBrightnessFactor>0.2</randomBrightnessFactor>
+    <skinColorOverride>(60, 73, 52)</skinColorOverride>
+    <displayOrderInCategory>65</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>muddy</symbol></li>
+        <li><symbol>green</symbol></li>
+        <li><symbol>gross</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>Skin_YellowMuddy</defName>
+    <label>muddy yellow skin</label>
+    <labelShortAdj>yellow</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that gives their skin a muddy yellow color.</description>
+    <randomBrightnessFactor>0.2</randomBrightnessFactor>
+    <skinColorOverride>(81, 77, 56)</skinColorOverride>
+    <displayOrderInCategory>65</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>muddy</symbol></li>
+        <li><symbol>yellow</symbol></li>
+        <li><symbol>gross</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>Skin_BrownMuddy</defName>
+    <label>muddy brown skin</label>
+    <labelShortAdj>brown</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that gives their skin a muddy brown color.</description>
+    <randomBrightnessFactor>0.2</randomBrightnessFactor>
+    <skinColorOverride>(76, 64, 58)</skinColorOverride>
+    <displayOrderInCategory>65</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>muddy</symbol></li>
+        <li><symbol>brown</symbol></li>
+        <li><symbol>gross</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>Skin_CyanMuddy</defName>
+    <label>muddy cyan skin</label>
+    <labelShortAdj>cyan</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that gives their skin a muddy cyan color.</description>
+    <randomBrightnessFactor>0.2</randomBrightnessFactor>
+    <skinColorOverride>(62, 81, 71)</skinColorOverride>
+    <displayOrderInCategory>65</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>muddy</symbol></li>
+        <li><symbol>cyan</symbol></li>
+        <li><symbol>gross</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>Skin_OliveMuddy</defName>
+    <label>muddy olive skin</label>
+    <labelShortAdj>olive</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that gives their skin a muddy olive color.</description>
+    <randomBrightnessFactor>0.2</randomBrightnessFactor>
+    <skinColorOverride>(78, 89, 64)</skinColorOverride>
+    <displayOrderInCategory>65</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>muddy</symbol></li>
+        <li><symbol>olive</symbol></li>
+        <li><symbol>gross</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+</Defs>
