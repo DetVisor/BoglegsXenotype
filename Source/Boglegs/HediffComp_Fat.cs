@@ -15,12 +15,6 @@ namespace Boglegs
         public Need_Food cachedNeed;
         public Need_Food need => cachedNeed ??= parent.pawn.needs.TryGetNeed<Need_Food>();
 
-        public override void CompPostTick(ref float severityAdjustment)
-        {
-            base.CompPostTick(ref severityAdjustment);
-            ApplyFatChanges(1);
-        }
-
         public override void CompPostTickInterval(ref float severityAdjustment, int delta)
         {
             base.CompPostTickInterval(ref severityAdjustment, delta);
