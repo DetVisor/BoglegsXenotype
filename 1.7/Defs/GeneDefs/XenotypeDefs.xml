@@ -26,7 +26,7 @@
       <li>PsychicAbility_Dull</li>
       <li>MeleeDamage_Strong</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">DV_IntimidatingPresence</li>
-      <li mayRequire="det.brawnum">DV_RoughPlay</li>
+      <li MayRequire="det.brawnum">DV_RoughPlay</li>
       <li>Immunity_Strong</li>
       <li>Beauty_Ugly</li>
       <li>FacialRidges</li>
