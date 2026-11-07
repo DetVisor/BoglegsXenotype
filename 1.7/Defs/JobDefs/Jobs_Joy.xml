@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JobDef>
+    <defName>DV_PlayTongo</defName>
+    <driverClass>TongoTable.JobDriver_PlayTable</driverClass>
+    <reportString>playing tongo.</reportString>
+    <joyDuration>4000</joyDuration>
+    <joyMaxParticipants>4</joyMaxParticipants>
+    <joySkill>Social</joySkill>
+    <joyXpPerTick>0.005</joyXpPerTick>
+    <joyKind>Gaming_Cerebral</joyKind>
+    <taleOnCompletion>PlayedGame</taleOnCompletion>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	<modExtensions>
+		<li Class="TongoTable.EffecterExtension">
+			<effecterDef>DV_PlayTongo</effecterDef>
+		</li>
+	</modExtensions>
+  </JobDef>
+
+</Defs>

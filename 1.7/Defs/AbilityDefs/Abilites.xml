@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AbilityDef>
+		<defName>DV_MuckSpit</defName>
+		<label>muck spit</label>
+		<description>Spew a disgusting muck over an area that hinders the movement of enemies.</description>
+		<iconPath>UI/Genes/Gene_StickyMuck</iconPath>
+		<charges>2</charges>
+		<cooldownTicksRange>12000</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<displayOrder>300</displayOrder>
+		<warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>5.9</range>
+			<warmupTime>0.4</warmupTime>
+			<soundCast>AcidSpray_Resolve</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<comps>
+			<li Class="CompProperties_AbilitySprayLiquid">
+				<projectileDef>DV_Proj_Muck</projectileDef>
+				<numCellsToHit>9</numCellsToHit>
+				<sprayEffecter>MuckSpit_Directional</sprayEffecter>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<ThingDef>
+		<defName>DV_Proj_Muck</defName>
+		<label>muck</label>
+		<thingClass>Projectile_Liquid</thingClass>
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData>
+			<texPath>Things/Filth/PoolSoft</texPath>
+			<color>(74, 75, 54)</color>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>Mote</shaderType>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>DV_Damage_MuckSpit</damageDef>
+			<speed>26</speed>
+			<damageAmountBase>9999</damageAmountBase>
+			<arcHeightFactor>0.4</arcHeightFactor>
+			<armorPenetrationBase>0.8</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<shadowSize>0</shadowSize>
+			<filth>DV_MuckPool</filth>
+			<filthCount>1~2</filthCount>
+		</projectile>
+	</ThingDef>
+
+	<DamageDef>
+		<defName>DV_Damage_MuckSpit</defName>
+		<label>muckspit</label>
+		<workerClass>DamageWorker_Extinguish</workerClass>
+		<canInterruptJobs>false</canInterruptJobs>
+		<makesBlood>false</makesBlood>
+		<defaultDamage>999999</defaultDamage>
+		<hediff>DV_CoveredInMuck</hediff>
+		<explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+		<explosionColorEdge>(1, 1, 1, 0.05)</explosionColorEdge>
+		<soundExplosion>Explosion_Stun</soundExplosion>
+		<harmsHealth>false</harmsHealth>
+		<combatLogRules>Damage_Extinguish</combatLogRules>
+		<consideredHelpful>true</consideredHelpful>
+	</DamageDef>
+
+	<HediffDef>
+		<defName>DV_CoveredInMuck</defName>
+		<description>Covered in a sticky muck.</description>
+		<label>covered in muck</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.5</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>1400</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>MuckSpit_Dripping</stateEffecter>
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>

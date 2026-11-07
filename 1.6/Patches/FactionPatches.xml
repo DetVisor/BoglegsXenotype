@@ -15,11 +15,22 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/FactionDef[defName="TradersGuild"]/xenotypeSet/xenotypeChances</xpath>
-		<value>
-			<DV_Bogleg>0.08</DV_Bogleg>
-		</value>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Odyssey</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/FactionDef[defName="TradersGuild"]/xenotypeSet/xenotypeChances</xpath>
+					<value>
+						<DV_Bogleg>0.08</DV_Bogleg>
+					</value>
+				</li>
+			</operations>
+		</match>
+		
 	</Operation>
-	
+
 </Patch>
